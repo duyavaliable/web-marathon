@@ -1,0 +1,242 @@
+/* Basic reset and container styles 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header styles 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Table styles 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Logout button 
+.logout-btn {
+    padding: 8px 16px;
+    background-color: #ff4444;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
+/*thong bao loi
+.error-message {
+    color: #ff0000;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/*phan entryNo
+.entry-no input[type="text"] {
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+.entry-no input[type="text"]:hover {
+    background: #f0f0f0;
+}
+
+.entry-no input[type="text"]:focus {
+    border: 1px solid #007bff;
+    background: white;
+}
+
+.btn-u {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #337ab7; 
+    float: right;
+    margin-top: 10px;
+}*/
+
+/*chinh sua-ve sau xoa */
+
+        /* Basic reset and container styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Marathon Table styles */
+.marathon-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.marathon-table th, .marathon-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.marathon-table th {
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+}
+
+.marathon-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.marathon-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Logout button */
+.logout-btn {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Error message */
+.error-message {
+    color: #ff0000;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* EntryNo input fields */
+.entry-no input[type="text"] {
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+.entry-no input[type="text"]:hover {
+    background: #f0f0f0;
+}
+
+.entry-no input[type="text"]:focus {
+    border: 1px solid #007bff;
+    background: white;
+    outline: none;
+}
+
+/* Time Record input fields */
+.time-record input[type="text"] {
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+.time-record input[type="text"]:hover {
+    background: #f0f0f0;
+}
+
+.time-record input[type="text"]:focus {
+    border: 1px solid #007bff;
+    background: white;
+    outline: none;
+}
+
+/* Buttons */
+.btn-u {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #337ab7;
+    transition: background-color 0.3s;
+}
+
+.btn-u:hover {
+    background-color: #285e8e;
+}
+
+/* Delete buttons 
+.marathon-table form[action="delete_user.php"] .btn-u {
+}*/
+
+.marathon-table form[action="delete_user.php"] .btn-u:hover {
+    background-color: #a71d2a;
+}
+.create-map-btn {
+    margin-top: 10px; /* Khoảng cách phía trên */
+    margin-left: 10px; /* Khoảng cách phía bên trái */
+}

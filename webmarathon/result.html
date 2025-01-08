@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marathon Results</title>
+    <link rel="stylesheet" href="css/result.css">
+</head>
+
+<body>
+    <div class="marathon-section">
+        <h2>Ha Noi Marathon Results</h2>
+        <table id="hanoi-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Entry No</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Time Record</th>
+                </tr>
+            </thead>
+            <tbody id="hanoi-body"></tbody>
+        </table>
+    </div>
+
+    <div class="marathon-section">
+        <h2>My Dinh Marathon Results</h2>
+        <table id="mydinh-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Entry No</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Time Record</th>
+                </tr>
+            </thead>
+            <tbody id="mydinh-body"></tbody>
+        </table>
+    </div>
+    <a href="index.php" class="b-home">Home</a>
+    <script>
+        function fetchData() {
+            fetch('backend/get_data.php')
+                .then(response => response.json())
+                .then(data => {
+                    updateTable('hanoi-body', data.hanoi);
+                    updateTable('mydinh-body', data.mydinh);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function updateTable(tableId, data) {
+            const tbody = document.getElementById(tableId);
+            tbody.innerHTML = '';
+
+            data.forEach(row => {
+                if (row.time_record) { // Chỉ hiển thị những người đã có thời gian
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.rank}</td>
+                        <td>${row.entry_no || 'N/A'}</td>
+                        <td>${row.name}</td>
+                        <td>${row.nationality}</td>
+                        <td>${row.time_record || 'N/A'}</td>
+                    `;
+                    tbody.appendChild(tr);
+                }
+            });
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', fetchData);
+
+        // Refresh data every 30 seconds
+        setInterval(fetchData, 30000);
+    </script>
+</body>
+
+</html>
