@@ -1,0 +1,39 @@
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+.form-section {
+  margin: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #008CBA;;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.back-button {
+  margin-top: 20px; 
+}
