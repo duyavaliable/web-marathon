@@ -2,11 +2,11 @@
 
 Một ứng dụng quản lý marathon toàn diện trên nền tảng web được thiết kế dành cho học sinh và giáo viên tham gia các sự kiện marathon.
 
-## Mô tả ngắn gọn
+## 📝 Mô tả ngắn gọn
 
 Hệ thống quản lý marathon trực tuyến cho phép học sinh và giáo viên đăng ký tham gia các sự kiện marathon, theo dõi kết quả và quản lý thông tin người tham gia.
 
-## Giới thiệu chi tiết
+## 📖 Giới thiệu chi tiết
 
 Dự án này được phát triển để phục vụ việc tổ chức và quản lý các sự kiện marathon trong môi trường giáo dục. Hệ thống cung cấp một nền tảng tổng hợp cho phép:
 
@@ -16,29 +16,29 @@ Dự án này được phát triển để phục vụ việc tổ chức và qu
 
 Đối tượng người dùng chính bao gồm học sinh, giáo viên, ban tổ chức sự kiện marathon trong các trường học và cơ sở giáo dục.
 
-## Tính năng nổi bật
+## ⭐ Tính năng nổi bật
 
 ### Dành cho Người tham gia (Học sinh & Giáo viên)
-- Xem thông tin chi tiết các sự kiện marathon
-- Đăng ký tham gia trực tuyến với form validation
-- Theo dõi kết quả cá nhân và bảng xếp hạng
-- Xem lịch trình và bản đồ đường chạy
+- 📋 Xem thông tin chi tiết các sự kiện marathon
+- ✍️ Đăng ký tham gia trực tuyến với form validation
+- 📊 Theo dõi kết quả cá nhân và bảng xếp hạng
+- 🗺️ Xem lịch trình và bản đồ đường chạy
 
 ### Dành cho Ban tổ chức
-- Dashboard quản trị viên để quản lý thông tin người tham gia
-- Cập nhật số áo (entry number) cho vận động viên
-- Ghi nhận thời gian hoàn thành thi đấu
-- Tự động tính toán và cập nhật bảng xếp hạng
-- Tạo sự kiện marathon mới
-- Xóa thông tin người tham gia nếu cần thiết
+- 📊 Dashboard quản trị viên để quản lý thông tin người tham gia
+- 🏷️ Cập nhật số áo (entry number) cho vận động viên
+- ⏱️ Ghi nhận thời gian hoàn thành thi đấu
+- 🏆 Tự động tính toán và cập nhật bảng xếp hạng
+- ➕ Tạo sự kiện marathon mới
+- 🗑️ Xóa thông tin người tham gia nếu cần thiết
 
-### Tính năng chung
-- Hiển thị kết quả và bảng xếp hạng real-time
-- Hệ thống bảo mật với đăng nhập admin
-- Giao diện responsive cho mobile và desktop
-- Tự động refresh dữ liệu mỗi 30 giây
+### 🌟 Tính năng chung
+- 🔄 Hiển thị kết quả và bảng xếp hạng real-time
+- 🔐 Hệ thống bảo mật với đăng nhập admin
+- 📱 Giao diện responsive cho mobile và desktop
+- 🔄 Tự động refresh dữ liệu mỗi 30 giây
 
-## Công nghệ sử dụng (Tech Stack)
+## 🛠️ Công nghệ sử dụng (Tech Stack)
 
 ### Frontend
 - HTML5
@@ -47,38 +47,37 @@ Dự án này được phát triển để phục vụ việc tổ chức và qu
 - Bootstrap Icons
 - AJAX cho cập nhật real-time
 
-### Backend
+### ⚙️ Backend
 - PHP 
 - MySQL
 
-### Database
-- MySQL với các bảng:
+### 🗄️ Database
+- 🗃️ MySQL với các bảng:
   - `admin_marathon`: Quản lý tài khoản admin
   - `name_marathon`: Thông tin các sự kiện marathon
   - `user_marathon`: Thông tin người tham gia
 
-### Security
-- Password hashing với `password_hash()`
-- Prepared statements để tránh SQL injection
-- Input validation và sanitization
-- XSS prevention
+### 🔒 Security
+- 🔐 Password hashing với `password_hash()`
+- 🛡️ Prepared statements để tránh SQL injection
+- ✅ Input validation và sanitization
+- 🚫 XSS prevention
 
-## Yêu cầu cài đặt (Prerequisites)
+## 📋 Yêu cầu cài đặt (Prerequisites)
 
-- XAMPP
-- PHP 7.4 
-- MySQL 5.7 
+-  XAMPP
+-  PHP  
+-  MySQL  
 
-## Cài đặt và Chạy dự án (Getting Started)
+## 🚀 Cài đặt và Chạy dự án (Getting Started)
 
-### 1. Clone Repository
+### 1. 📥 Clone Repository
 ```bash
 git clone <repository-url>
 cd web-new
 ```
 
-
-### 2. Cấu hình kết nối Database
+### 2. ⚙️ Cấu hình kết nối Database
 Chỉnh sửa file [`webmarathon/backend/db_connect.php`](webmarathon/backend/db_connect.php):
 ```php
 $server = "localhost";
@@ -87,13 +86,13 @@ $password = "yourpassword";
 $database = "marathon";
 ```
 
-### 3. Khởi động dự án
+### 3. ▶️ Khởi động dự án
 
-1. Khởi động XAMPP
-2. Tạo Database 
+1. 🚀 Khởi động XAMPP
+2. 🗄️ Tạo Database 
   - Mở trình duyệt và truy cập: `http://localhost/phpmyadmin`
 
-### 4. Hướng dẫn sử dụng
+### 4. 📚 Hướng dẫn sử dụng
 
 **Cho học sinh/giáo viên:**
 1. Truy cập trang chủ để xem các sự kiện marathon
@@ -102,10 +101,10 @@ $database = "marathon";
 4. Theo dõi kết quả tại trang "Result"
 
 **Cho admin:**
-1. Truy cập trang đăng nhập admin
-2. Sử dụng dashboard để quản lý người tham gia
-3. Cập nhật số áo và thời gian hoàn thành
-4. Tạo sự kiện marathon mới nếu cần
+1.  Truy cập trang đăng nhập admin
+2.  Sử dụng dashboard để quản lý người tham gia
+3.  Cập nhật số áo và thời gian hoàn thành
+4.  Tạo sự kiện marathon mới nếu cần
 
 ## Hướng dẫn chạy Kiểm thử (Running Tests)
 
@@ -115,12 +114,12 @@ $database = "marathon";
 3. **Hiển thị kết quả**: Kiểm tra real-time updates và bảng xếp hạng
 4. **Tạo sự kiện**: Tạo marathon mới và kiểm tra hiển thị
 
-### Kiểm thử bảo mật:
+### 🔒 Kiểm thử bảo mật:
 1. Thử truy cập trang admin mà không đăng nhập
 2. Test SQL injection với các input fields
 3. Kiểm tra XSS prevention
 
-## Cấu trúc thư mục (Folder Structure)
+## 📁 Cấu trúc thư mục (Folder Structure)
 
 ```
 web-new/
